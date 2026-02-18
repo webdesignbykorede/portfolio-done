@@ -1,0 +1,114 @@
+body{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to bottom,#0a0a0a,#111);
+    text-align: center;
+    margin: 0;
+}
+header{
+    background: #222;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid gold;
+}
+.hero img{
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 20px;
+}
+section{
+    padding: 40px 20px;
+}
+.song-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.song{
+    background: #222;
+    padding:15px 25px;
+    border-radius: 10px;
+    width: 200px;
+    border: 1px solid #333;
+    transition: 0.3s;
+}
+.song:hover{
+    background: gold;
+    color: #111;
+}
+.Gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    padding: 30px;
+}
+.Gallery img{
+    width: 180px;
+    border-radius: 20px;
+    height: 180px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+    object-fit: cover;
+}
+.social-media a{
+    color: gold;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.Gallery img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    text-shadow: 0 0 10px gold;
+}
+footer{
+    background: #222;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #333
+}
+@media screen and (max-width: 768px){
+    header{
+        font-size: 24px;
+        padding: 15px;
+    }
+    .Gallery img{
+        width: 150px;
+        height: 150px;
+    }
+    .song{
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .song-list{
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .social-media a{
+        font-size: 18px;
+        margin: 5px;
+    }
+    section{
+        padding: 20px 10px;
+    }
+    .Gallery{
+        padding: 20px;
+        gap: 10px;
+    }
+    .Gallery img{
+        width: 120px;
+        height: 120px;
+    }
+
+
+}
+
